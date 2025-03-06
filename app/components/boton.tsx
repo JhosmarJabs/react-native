@@ -25,6 +25,7 @@ const Boton = (props: Propiedades) => {
         <Pressable onPress={props.onPress} 
         style={getVariante()}>
             <View>
+                
                 <Text>{props.titulo}</Text>
             </View>
         </Pressable>
