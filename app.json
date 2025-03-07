@@ -1,13 +1,14 @@
 {
   "expo": {
-    "name": "App5B",
-    "slug": "App5B",
+    "name": "MyNewProject",
+    "slug": "MyNewProject",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
+    "scheme": "your-app-scheme",
+    
     "newArchEnabled": true,
-    "scheme": "App5B",
     "splash": {
       "image": "./assets/splash-icon.png",
       "resizeMode": "contain",

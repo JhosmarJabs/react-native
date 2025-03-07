@@ -1,16 +1,27 @@
-import { Tabs } from "expo-router";
-import FontAwesome6 from '@expo/vector-icons/FontAwesome6';
+import { Tabs } from 'expo-router';
+import { MaterialIcons } from '@expo/vector-icons';
 
-export default function tabsLayout(){
-    return(
-        <Tabs screenOptions={{headerShown:false}}>
-            <Tabs.Screen name="index" />
-            <Tabs.Screen name="perfil" options={{
-                title: 'Profile',
-                tabBarIcon: ({color})=><FontAwesome6 name="person-breastfeeding" size={24} color={color} />
-            }}  />
-            <Tabs.Screen name="setings" />
-
-        </Tabs>
-    )
+export default function Layout() {
+  return (
+    <Tabs>
+      <Tabs.Screen
+        name="categorias"
+        options={{
+          title: 'Categorías',
+          tabBarIcon: ({ color, size }) => (
+            <MaterialIcons name="category" size={size} color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="productos"
+        options={{
+          title: 'Productos',
+          tabBarIcon: ({ color, size }) => (
+            <MaterialIcons name="store" size={size} color={color} />
+          ),
+        }}
+      />
+    </Tabs>
+  );
 }
